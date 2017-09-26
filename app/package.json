@@ -1,0 +1,10 @@
+{
+    "name": "refcat1o",
+    "description": "Web del referendum i consula d'on votar",
+    "version": "0.0.1",
+    "author": "Jordi Baylina <jordi@baylina.cat>",
+    "main": "index.js",
+    "dependencies": {
+        "express": "^4.15.5"
+    }
+}

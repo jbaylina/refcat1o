@@ -1,0 +1,43 @@
+{
+    "name": "refcat1o",
+    "description": "Web del referendum i consula d'on votar",
+    "version": "0.0.1",
+    "author": "Jordi Baylina <jordi@baylina.cat>",
+    "main": "app/index.js",
+    "scripts": {
+        "postinstall": "install-app-deps",
+        "start": "electron ./app --enable-logging",
+        "dev": "NODE_ENV='development' npm run start",
+        "dist": "build -mwl --x64 --ia32"
+    },
+    "devDependencies": {
+        "electron-builder": "^19.30.2",
+        "electron-prebuilt": "^1.4.13"
+    },
+    "build": {
+        "productName": "refcat1o",
+        "dmg": {
+          "background": "build/background.png",
+          "icon": "build/icon.icns",
+          "contents": [
+            {
+              "x": 320,
+              "y": 250,
+              "type": "link",
+              "path": "/Applications"
+            },
+            {
+              "x": 70,
+              "y": 250,
+              "type": "file"
+            }
+          ]
+        },
+        "win": {
+            "target": "nsis",
+            "icon": "build/icon"
+        },
+        "linux": {
+        }
+    }
+}
