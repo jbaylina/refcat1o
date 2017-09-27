@@ -1,4 +1,4 @@
-# referendum.cat
+# referendum.cat V0.2
 Mirror de la web www.referendum.cat (www.ref1oct.eu).
 
 Mirror creado en vista a la represión informativa llevada a cabo por el Estado al cerrar la página web de información `www.referendum.cat`.
